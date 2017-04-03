@@ -1,8 +1,9 @@
 
 public class Automovel {
 	
-	static final String marca = "Volks";//final nao deixa mudar o valor
-	static String domonio = "Carro";
+	static final String MARCA = "Volks";//final nao deixa mudar o valor
+	static String DOMINIO = "Carro";
+	//private final static String MENSAGEM_ERRO_VALIDACAO_PORTAS = "Erro - Não pode ser criado com menos de uma porta!";
 	private int numeroRodas, numeroPortas;
 	private String cor, modelo;
 	
@@ -22,8 +23,8 @@ public class Automovel {
 		return numeroRodas;
 	}
 	public void setNumeroPortas(int numeroPortas) {
-		if(numeroPortas<1){
-			System.out.println("Erro - Não pode ser criado com menos de uma porta!");
+		if(numeroPortas<2){
+			System.out.println(MensagensErro.MENSAGEM_ERRO_VALIDACAO_PORTAS);
 		}else{
 			this.numeroPortas = numeroPortas;
 		}
@@ -35,6 +36,6 @@ public class Automovel {
 		this.numeroRodas = numeroRodas;
 	}
 	//public static String getDominio(){
-	//	return domonio;
+	//	return DOMINIO;
     //} nao precisa usar isso, mas é possivel
 }
