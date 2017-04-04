@@ -10,10 +10,10 @@ public class AppCarro {
 		
 		System.out.println(Automovel.MARCA); //é possível fazer um valor estático
 		
-		System.out.println("O modelo do " + Automovel.DOMINIO + " é: " + meuFusquinha.getModelo());
-		System.out.println("O automóvel tem " + meuFusquinha.getNumeroPortas() +" portas");
-		System.out.println("O automóvel tem " + meuFusquinha.getNumeroRodas() +" rodas");
-		System.out.println("O automóvel tem a cor " + meuFusquinha.getCor());
+		System.out.println(Mensagens.MENSAGEM_AO_BUSCAR_MODELO + meuFusquinha.getModelo());
+		System.out.println(Mensagens.MENSAGEM_AO_BUSCAR_NUMERO_PORTAS + meuFusquinha.getNumeroPortas());
+		System.out.println(Mensagens.MENSAGEM_AO_BUSCAR_NUMERO_RODAS + meuFusquinha.getNumeroRodas());
+		System.out.println(Mensagens.MENSAGEM_AO_BUSCAR_COR + meuFusquinha.getCor());
 	}
 
 }

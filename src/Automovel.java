@@ -24,7 +24,7 @@ public class Automovel {
 	}
 	public void setNumeroPortas(int numeroPortas) {
 		if(numeroPortas<2){
-			System.out.println(MensagensErro.MENSAGEM_ERRO_VALIDACAO_PORTAS);
+			System.out.println(Mensagens.MENSAGEM_ERRO_VALIDACAO_PORTAS);
 		}else{
 			this.numeroPortas = numeroPortas;
 		}
