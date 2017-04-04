@@ -4,7 +4,7 @@ public class Automovel {
 	static final String MARCA = "Volks";//final nao deixa mudar o valor
 	static String DOMINIO = "Carro";
 	//private final static String MENSAGEM_ERRO_VALIDACAO_PORTAS = "Erro - Não pode ser criado com menos de uma porta!";
-	private int numeroRodas, numeroPortas;
+	private Integer numeroRodas, numeroPortas;
 	private String cor, modelo;
 	
 	public Automovel(String modelo) {
@@ -16,10 +16,17 @@ public class Automovel {
 	public String getCor() {
 		return cor;
 	}
-	public int getNumeroPortas() {
+	public Integer getNumeroPortas() {
 		return numeroPortas;
 	}
-	public int getNumeroRodas() {
+	/*public String getNumeroPortas(){
+		if(numeroPortas==null){
+			return "";
+		}else{
+			return numeroPortas.toString();
+		}
+	} para não aparecer o null na tela*/
+	public Integer getNumeroRodas() {
 		return numeroRodas;
 	}
 	public void setNumeroPortas(int numeroPortas) {

@@ -4,7 +4,7 @@ public class AppCarro {
 	public static void main(String[] args) {
 		
 		Automovel meuFusquinha = new Automovel("Fusca 67");
-		meuFusquinha.setNumeroPortas(2);
+		meuFusquinha.setNumeroPortas(0);
 		meuFusquinha.setNumeroRodas(4);
 		meuFusquinha.setCor("Vermelha");
 		
